@@ -1,0 +1,217 @@
+.body{
+    margin: 0%;
+    padding: 0%;
+}
+.Simulador{
+    width: 70%;
+    padding-left: 7%;
+}
+.Simulador tr td h4{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 0%;
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.input[type="number"]{
+    width: 10%;
+    padding: 1%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    text-align: center;
+    font-weight: bolder;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input_a{
+    width: 20%;
+    padding: 1%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    text-align: center;
+    font-weight: bolder;
+}
+.input_b{
+    width: 20%;
+    padding: 1%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    text-align: center;
+    font-weight: bolder;
+}
+.input_c{
+    width: 20%;
+    padding: 1%;
+    border: 2px solid white;
+    border-radius: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: inherit;
+    color: white;
+    outline: none;
+    background: none;
+    outline: none;
+    -moz-appearance: none;
+    text-align: center;
+    font-weight: bolder;
+}
+.Calcular{
+    left: 83%;  
+    top: 70%;
+    position: fixed; 
+    font-size: 20px; 
+    background: #181c24; 
+    color: white; 
+    border-color: #a4a8b0;
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.Resultados{
+    width: 70%;
+    flex-direction: column;
+    padding-left: 12%;
+}
+.Resultados tr td h4{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 0%;
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.Reiniciar{ 
+    position: relative; 
+    font-size: 20px;
+    left: 37%;  
+    bottom: 27%;
+    position: fixed; 
+    font-size: 20px; 
+    background: #181c24; 
+    color: white; 
+    border-color: silver;
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    display: none;
+}
+.Dona{
+    position: relative; 
+    font-size: 20px;
+    left: 55%;  
+    bottom: 27%;
+    position: fixed; 
+    font-size: 20px; 
+    background: #181c24; 
+    color: white; 
+    border-color: silver;
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    display: none;
+}
+.Inicio{
+    position: relative; 
+    font-size: 20px;
+    left: 74%;  
+    bottom: 33%;
+    position: fixed; 
+    font-size: 20px; 
+    background: #181c24; 
+    color: white; 
+    border-color: silver;
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.volver{
+    position: relative; 
+    left: 70%;  
+    bottom: 25%;
+    position: fixed; 
+    background: #181c24; 
+    color: white; 
+    border-color: silver;
+    border-radius: 30px; 
+    text-align: center;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 600px 350px 500px;
+    grid-column-gap: 0%;
+    position: fixed;
+    margin-left: 9%;
+    bottom: 25%;
+}
+h4{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 0%;
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+h5{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 0%;
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+ h6{
+    font-weight: bolder;
+    font-size: 17px;
+    margin: 0%;
+    padding-bottom: 1%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+.footer{
+    position: flex-end;
+}

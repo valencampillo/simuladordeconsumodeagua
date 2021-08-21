@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/drop.png">
+    <link rel="stylesheet" href= "css.css">
+    <title>Simulador de Consumo de Agua</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+    <body style="background-color: #181c24;">
+    
+    <div div class="container" style="height: 76vh;">
+
+        <a href="index.html" style="text-decoration: none;"><h2 style= "font-size: 30px; text-align: center; color: white; margin: 0%; padding-bottom: 1%; font-family: 'Montserrat', sans-serif;" ><b>Simulador de Consumo de Agua.</b></h2></a>
+        <h3 style="font-size: 25px; text-align: center; color: white; margin: 0%; padding-bottom: 1%; font-family: 'Montserrat', sans-serif;">Tus resultados:</h3>
+        
+        <hr class="featurette-divider" style= "margin-bottom: 1%; width: 85%; margin-left: 8%;">
+        
+        <table class="Resultados" id="Resultados" style="position: fixed; left: 10%; bottom: 60%;"></table>
+
+        <div class="datos" style="display: none; padding-left: 20%; padding-top: 11%;">
+            <div style="display: flex;">
+                <div>
+                    <a href="https://www.who.int/es/"><img src="img/omslogo.svg" width="300px"></a>
+                </div>
+                <div style="align-self: center; width: 50%;">
+                    <h4>De acuerdo con la Organización Mundial de la Salud (OMS), una persona debe consumir en promedio 100 litros de agua para satisfacer las necesidades tanto de consumo como de higiene. Sin embargo, se consumen hasta 250 litros de agua por persona.</h4>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 0%; padding: 0%;">
+            <input class="Reiniciar" id="Reiniciar" type="button" value="Hacer test otra vez" onclick="Reiniciar();">
+            <a href="donar.html"><input class="Dona" id="Dona" type="button" value="Doná!"></a>
+        </div>
+    </div>
+
+    <div>
+        <footer>
+            <hr class="featurette-divider" style="margin-bottom: 0%; width: 85%; margin-left: 8%;">  
+            <table style= "width: 100%;">
+                <tr>
+                    <td>
+                        <h1 style= "font-size: 16px; text-align: center; margin-top: 5%; font-family: 'Montserrat', sans-serif; color: white;"><b>Buenos Aires, 2021</b></h1>
+                    </td>
+                    <td>
+                        <div style= "font-size: 80px; padding-left: 47%; margin-top: -4%; font-family: 'Sarabun', sans-serif; color: #a4a8b0;">VC</div>
+                    </td>
+                    <td>
+                        <h1 style= "font-size: 16px; padding-left: 42%; margin-top: 5%; font-family: 'Montserrat', sans-serif; color: white;"><b>© All Rights Reserved</b></h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div style= "font-size: 16px; padding-left: 20%; text-align: center; margin-top: -4%; font-family: 'Montserrat', sans-serif; color: white;"><b>Valentin Campillo</b></div>
+                    </td>
+                    <td>
+                        <div style="display: flex; padding-left: 45%; position: sticky; margin-top: -5%;">
+                            <a href="https://github.com/valencampillo"><img src="img/GitHubLogo.png" style="position: fixed; height: 30px; margin-top: 0.5%; margin-left: 2.7%;"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/valentin-campillo-8966b5177/"><img src="img/linkedinlogo.svg" style="position: fixed; margin-top: 0.4%; width: 40px; margin-left: 22%;"></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr class="featurette-divider" style="margin-top: 1%; margin-bottom: 0%; width: 85%; margin-left: 8%;">
+        </footer>    
+    </div>
+    <script src="resultado.js"></script>
+</body>
+</html>

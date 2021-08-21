@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@1,800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/drop.png">
+    <link rel="stylesheet" href= "css.css">
+    <title>Simulador de Consumo de Agua</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body style="background-color: #181c24;">
+
+    <div class="container" style="height: 76vh;">
+
+        <h1 style="font-size: 17px; text-align: center; color: white; margin: 0%; padding-bottom: 1%; font-family: 'Montserrat', sans-serif;">Bienvenido al</h1>
+        <h2 style="font-size: 30px; text-align: center; color: white; margin: 0%; padding-bottom: 1%; font-family: 'Montserrat', sans-serif;"><b>Simulador de Consumo de Agua.</b></h2> 
+        <h3 style="font-size: 20px; text-align: center; color: white; margin: 0%; padding-bottom: 1%; font-family: 'Montserrat', sans-serif;">Acá vas a conocer cual es tu consumo diario, semanal y mensual de agua en litros.</h3>
+        
+        <hr class="featurette-divider" style= "margin-bottom: 1%; width: 85%; margin-left: 8%;">
+
+        <table class="Simulador" id="Simulador" width= 50%, align= center>
+            <tr>
+                <td>
+                    <h4>¿Cuantas veces descargas el inodoro por dia?</h4>
+                </td>   
+                <td style="display: flex;">
+                    <input class="input" type="number" name="a" id="a" min="1"><div style="width: 20%;"></div><h4>veces.</h4>
+                </td>
+                <div id="error"></div>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>¿Cuantas veces te bañas por semana?</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="b" id="b" min="1"><div style="width: 20%;"></div><h4>veces.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Tiempo que tardas en bañarte</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="c" id="c" min="1"><div style="width: 20%;"></div><h4>minutos.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>¿Cuantas veces te cepillas los dientes por dia?</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="d" id="d" min="1"><div style="width: 20%;"></div><h4>veces.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Segundos que dejas la canilla abierta al cepillarte los dientes</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="e" id="e" min="1"><div style="width: 20%;"></div><h4>segundos.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>¿Cuantas veces te lavas las manos al dia?</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="f" id="f" min="1"><div style="width: 20%;"></div><h4>veces.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Segundos que dejas la canilla abierta al lavarte las manos</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="g" id="g" min="1"><div style="width: 20%;"></div><h4>segundos.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Cantidad de veces que usas el lavarropas por semana</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="h" id="h" min="1"><div style="width: 20%;"></div><h4>veces.</h4>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h4>Cantidad de veces que lavas los platos por dia</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="i" id="i" min="1"><div style="width: 20%;"></div><h4>veces.</h4>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>
+                    <h4>Segundos que dejas la canilla abierta al lavar los platos</h4>
+                </td>
+                <td style="display: flex;">
+                    <input class="input" type="number" name="j" id="j" min="1"><div style="width: 20%;"></div><h4>segundos.</h4>
+                </td>
+            </tr>
+        </table>
+        <div style="margin: 0%; padding: 0%;">
+            <input class="Calcular" type="button" value="Calcular" onclick="Calcular();">
+            <div id="error"></div>
+        </div>
+    </div>
+   
+    <div>
+        <footer>
+            <hr class="featurette-divider" style="margin-bottom: 0%; width: 85%; margin-left: 8%;">  
+            <table style= "width: 100%;">
+                <tr>
+                    <td>
+                        <h1 style= "font-size: 16px; text-align: center; margin-top: 5%; font-family: 'Montserrat', sans-serif; color: white;"><b>Buenos Aires, 2021</b></h1>
+                    </td>
+                    <td>
+                        <div style= "font-size: 80px; padding-left: 47%; margin-top: -4%; font-family: 'Sarabun', sans-serif; color: #a4a8b0;">VC</div>
+                    </td>
+                    <td>
+                        <h1 style= "font-size: 16px; padding-left: 42%; margin-top: 5%; font-family: 'Montserrat', sans-serif; color: white;"><b>© All Rights Reserved</b></h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <div style= "font-size: 16px; padding-left: 20%; text-align: center; margin-top: -4%; font-family: 'Montserrat', sans-serif; color: white;"><b>Valentin Campillo</b></div>
+                    </td>
+                    <td>
+                        <div style="display: flex; padding-left: 45%; position: sticky; margin-top: -5%;">
+                            <a href="https://github.com/valencampillo"><img src="img/GitHubLogo.png" style="position: fixed; height: 30px; margin-top: 0.5%; margin-left: 2.7%;"></a>
+                        </div>
+                        <div>
+                            <a href="https://www.linkedin.com/in/valentin-campillo-8966b5177/"><img src="img/linkedinlogo.svg" style="position: fixed; margin-top: 0.4%; width: 40px; margin-left: 22%;"></a>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <hr class="featurette-divider" style="margin-top: 1%; margin-bottom: 0%; width: 85%; margin-left: 8%;">
+        </footer>  
+    </div>
+    <script src="js.js"></script>
+</body>
+</html>
